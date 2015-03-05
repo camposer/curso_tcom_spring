@@ -59,5 +59,11 @@
 	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/spring/spring-aop-3.2.0.M2.jar"/>
 	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/spring/spring-beans-3.2.0.M2.jar"/>
 	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/spring/spring-core-3.2.0.M2.jar"/>
+	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/commons-logging/commons-logging-adapters-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/commons-logging/commons-logging-1.1.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/commons-logging/commons-logging-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/commons-logging/commons-logging-tests.jar"/>
+	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/commons-logging/commons-logging-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/home/camposer/Downloads/java/libs-master/libs/commons-logging/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

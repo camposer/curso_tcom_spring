@@ -7,7 +7,7 @@ public class Principal {
 	public static void main(String[] args) {
 		// 1.- Instancian el contenedor de IoC (Inversion of Control)
 		ApplicationContext ctx = 
-				new ClassPathXmlApplicationContext();
+				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// 2.- Extrayendo bean del contenedor de IoC
 		HolaMundo hm = ctx.getBean("hm", HolaMundo.class);
