@@ -5,6 +5,16 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Beans -->
-	<bean id="hm" class="basico.HolaMundo"/>
+	<bean id="env" class="basico.Envoltorio">
+		<constructor-arg index="0" value="Juan"/>
+		<constructor-arg name="edad" value="30"/>
+	</bean>
 	
+	<bean id="hm1" class="basico.HolaMundoImpl">
+		<property name="envoltorio" ref="env"/>
+	</bean>
+	
+	<bean id="hm2" class="basico.HelloWorldImpl" scope="prototype">
+		<property name="envoltorio" ref="env"/>
+	</bean>
 </beans>

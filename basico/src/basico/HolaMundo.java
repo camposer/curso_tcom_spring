@@ -1,7 +1,7 @@
 package basico;
 
-public class HolaMundo {
-	public void saludar(String nombre) {
-		System.out.println("Hola " + nombre);
-	}
+public interface HolaMundo {
+	public void saludar();
+	public void setNombre(String nombre);
+	public void setEdad(int edad);
 }
