@@ -2,13 +2,23 @@ package com.organizacion.ejercicio1.gui;
 
 import java.util.Scanner;
 
-import com.organizacion.ejercicio1.util.Calculadora;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+import com.organizacion.ejercicio1.util.Calculadora;
+ 
+@Component("calculadoraGui") // Cambiado nombre (era por defecto calculadoraGuiImpl)
+@Scope("singleton") // por defecto
 public class CalculadoraGuiImpl implements CalculadoraGui {
 	private Scanner scanner = new Scanner(System.in);
+	
+	@Autowired // Inyecta por tipo de dato
+	@Qualifier("calculadoraImpl") // Nombre por defecto
 	private Calculadora calc; // Inyectado por Spring!!
 	
-	public void setCalculadora(Calculadora calc) {
+	public void setCalculadora(Calculadora calc) { // Sólo para inyección desde archivo XML
 		this.calc = calc;
 	}
 

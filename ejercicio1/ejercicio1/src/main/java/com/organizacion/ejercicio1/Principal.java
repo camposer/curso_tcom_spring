@@ -8,7 +8,7 @@ import com.organizacion.ejercicio1.gui.CalculadoraGui;
 public class Principal  {
     public static void main( String[] args ) {
         ApplicationContext ctx = 
-        		new ClassPathXmlApplicationContext("applicationContext.xml");
+        		new ClassPathXmlApplicationContext("applicationContext-ann.xml");
         ctx.getBean("calculadoraGui", CalculadoraGui.class).iniciar();
     }
 }
