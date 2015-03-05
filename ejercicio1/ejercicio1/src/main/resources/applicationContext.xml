@@ -8,7 +8,7 @@
 		class="com.organizacion.ejercicio1.util.CalculadoraImpl"/>
 	
 	<bean id="calculadoraGui"
-			class="com.organizacion.ejercicio1.gui.CalculadoraGui">
+			class="com.organizacion.ejercicio1.gui.CalculadoraGuiImpl">
 		<property name="calculadora" ref="calcref"/>
 	</bean>
 </beans>
