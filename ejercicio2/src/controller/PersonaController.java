@@ -13,7 +13,7 @@ public class PersonaController {
 
 		@RequestMapping("mostrar")
 		public String cualquierCosa() {
-			return "/jsp/persona/mostrar.jsp";
+			return "/WEB-INF/jsp/persona/mostrar.jsp";
 		}
 		
 //		@RequestMapping("resultado")
@@ -47,6 +47,6 @@ public class PersonaController {
 			else
 				model.addAttribute("mensaje", "Modificando...");
 			
-			return "/jsp/persona/resultado.jsp";
+			return "/WEB-INF/jsp/persona/resultado.jsp";
 		}
 }
