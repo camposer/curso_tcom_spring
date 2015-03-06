@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="/WEB-INF/jsp/comun/cabecera.jsp" %>
 
 <%--  BEGIN: específico --%>
@@ -52,30 +52,22 @@
 			<th>Edad</th>
 			<th>Mostrar</th>
 			<th>Eliminar</th>
+			<th>Conducir</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Juan</td>
-			<td>Pérez</td>
-			<td>35</td>
-			<td><a href='#'>mostrar</a></td>
-			<td><a href='#'>eliminar</a></td>
-		</tr>
-		<tr>
-			<td>María</td>
-			<td>García</td>
-			<td>40</td>
-			<td><a href='#'>mostrar</a></td>
-			<td><a href='#'>eliminar</a></td>
-		</tr>
-		<tr>
-			<td>Pedro</td>
-			<td>Gónzalez</td>
-			<td>50</td>
-			<td><a href='#'>mostrar</a></td>
-			<td><a href='#'>eliminar</a></td>
-		</tr>
+		<c:forEach var="p" items="${personas}">
+			<tr>
+				<td>${p.nombre}</td>
+				<td>${p.apellido}</td>
+				<td>${p.edad}</td>
+				<td><a href='#'>mostrar</a></td>
+				<td><a href='#'>eliminar</a></td>
+				<td>
+					<c:if test="${p.edad >= 21 }">Puede beber</c:if>
+				</td>
+			</tr>
+		</c:forEach>
 	</tbody>
 </table>
 
